@@ -3,10 +3,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
+    position: fixed;
     background-color: white;
     top: 0;
     z-index: 1;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); 
+    transition: background-color, box-shadow 0.25s ease;
   }
   body {
     font-family: 'Raleway', sans-serif;
@@ -27,6 +32,10 @@ header {
     margin-right: 25px;
   }
   
+  .header__scrolled {
+  background-color: white;
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
+}
   button {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
@@ -38,7 +47,9 @@ header {
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
   }
-
+.about {
+  padding-top: 200px;
+}
   .about__image {
     width: 500px;
     position: relative;
